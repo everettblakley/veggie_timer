@@ -1,19 +1,23 @@
 <template>
-  <main class="container mx-auto pb-12">
-    <h1 class="text-3xl text-center py-4">Veggie Timer</h1>
+  <main class="container pb-12 mx-auto">
+    <h1 class="py-4 text-3xl text-center">Veggie Timer</h1>
     <table class="mx-auto">
       <tr>
         <th>Vegetable</th>
         <th
           v-for="option in timeOptions"
           :key="option"
-          class="option font-light"
+          class="font-light option"
           :class="['bg-times-' + [option]]"
         >
           {{ option }}
         </th>
       </tr>
-      <tr v-for="veg in veggies" :key="veg.name">
+      <tr
+        v-for="(veg, index) in veggies"
+        :key="veg.name"
+        :class="{ 'bg-yellow-100': index % 2 === 0 }"
+      >
         <td class="px-3">
           <p>{{ veg.name }}</p>
         </td>
@@ -21,7 +25,8 @@
           v-for="option in timeOptions"
           :key="option"
           class="option"
-          :class="optionClassName(option, veg.times)"
+          :class="[optionClassName(option, veg)]"
+          @click="handleClick(option, veg)"
         ></td>
       </tr>
     </table>
@@ -34,16 +39,33 @@ import { useStore } from "vuex";
 export default {
   setup() {
     const store = useStore();
-    console.log([...store.state.data]);
+    const veggies = store.state.data;
+    const timeOptions = [15, 20, 25, 30, 35, 40, 45, 60, 90];
     return {
-      veggies: store.state.data,
-      timeOptions: [15, 20, 25, 30, 35, 40, 45, 60, 90],
+      veggies,
+      timeOptions,
+      selectedVeggies: store.state.selectedVeggies,
       selectVeggie: (veggie) => store.commit("selectVeggie", veggie),
+      removeVeggie: (veggie) => store.commit("removeVeggie", veggie),
     };
   },
   methods: {
-    optionClassName(option, times) {
-      return times.indexOf(option) !== -1 ? `bg-times-${option}` : "";
+    optionClassName(option, { name, times }) {
+      let klass = times[option] ? `bg-times-${option} cursor-pointer` : "";
+      if (this.selectedVeggies[name] === option) klass += " selected";
+      return klass;
+    },
+    handleClick(option, { name, times }) {
+      if (times[option]) {
+        const selectedVeg = this.selectedVeggies[name];
+        if (selectedVeg) {
+          if (selectedVeg[option]) {
+            this.removeVeggie({ name });
+            return;
+          }
+        }
+        this.selectVeggie({ name, time: option });
+      }
     },
   },
 };
@@ -52,6 +74,10 @@ export default {
 <style lang="postcss">
 .option {
   @apply w-12 h-3 text-center text-white;
+}
+td[class*="bg-times-"]:hover,
+.selected {
+  @apply border-4 border-gray-800;
 }
 </style>
 

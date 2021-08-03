@@ -1,287 +1,823 @@
-[
-  {
-    "name": "Artichoke (whole)",
-    "times": [
-      60,
-      90
-    ]
-  },
-  {
-    "name": "Artichoke (hearrts)",
-    "times": [
-      20,
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Beans (green, snap, or wax)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Beans (butter, Lima, pinto, etc.)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Beets",
-    "times": [
-      30,
-      35,
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Broccoli (florets)",
-    "times": [
-      20,
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Brussels sprouts",
-    "times": [
-      20,
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Cabbage (wedges)",
-    "times": [
-      30,
-      35,
-      40
-    ]
-  },
-  {
-    "name": "Carrots",
-    "times": [
-      30,
-      35,
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Cauliflower (florets)",
-    "times": [
-      20,
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Corn (on the cob)",
-    "times": [
-      20,
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Corn (kernels)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Eggplant (cubed)",
-    "times": [
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Eggplant (halved)",
-    "times": [
-      30,
-      35,
-      40
-    ]
-  },
-  {
-    "name": "Fennel",
-    "times": [
-      25,
-      30
-    ]
-  },
-  {
-    "name": "Garlic (heads)",
-    "times": [
-      35,
-      40
-    ]
-  },
-  {
-    "name": "Mushrooms",
-    "times": [
-      20,
-      25
-    ]
-  },
-  {
-    "name": "Okra",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Onions (chopped or rings)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Onions (halves)",
-    "times": [
-      30,
-      35,
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Onions (whole)",
-    "times": [
-      45,
-      60
-    ]
-  },
-  {
-    "name": "Parsnips",
-    "times": [
-      30,
-      35,
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Peas (field, Blackeye)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Peas (green - shelled or in the pod)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Peppers (chopped)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Potatoes (cubed or wedges)",
-    "times": [
-      30,
-      35,
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Pumpkins (halved or quartered)",
-    "times": [
-      45,
-      60
-    ]
-  },
-  {
-    "name": "Radishes (chopped or whole)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Rutabagas (cubed)",
-    "times": [
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Summer Squash (cubed, rounds, or strips)",
-    "times": [
-      15,
-      20
-    ]
-  },
-  {
-    "name": "Winter Squash (cubed)",
-    "times": [
-      25,
-      30,
-      35
-    ]
-  },
-  {
-    "name": "Squash (halved)",
-    "times": [
-      45,
-      60
-    ]
-  },
-  {
-    "name": "Sweet potatoes (cubes or wedges)",
-    "times": [
-      30,
-      35
-    ]
-  },
-  {
-    "name": "Sweet potatoes (rounds)",
-    "times": [
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Tomatillos (halved)",
-    "times": [
-      20,
-      25
-    ]
-  },
-  {
-    "name": "Tomatoes (plum)",
-    "times": [
-      40,
-      45
-    ]
-  },
-  {
-    "name": "Turnips (chopped)",
-    "times": [
-      30,
-      35,
-      45
-    ]
-  },
-  {
-    "name": "Zucchini (cubes, rounds, or strips)",
-    "times": [
-      20,
-      25
-    ]
-  }
-]
+{
+  "new": [
+    {
+      "name": "Artichoke (whole)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": true,
+        "90": true
+      }
+    },
+    {
+      "name": "Artichoke (hearrts)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Beans (green, snap, or wax)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Beans (butter, Lima, pinto, etc.)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Beets",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Broccoli (florets)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Brussels sprouts",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Cabbage (wedges)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Carrots",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Cauliflower (florets)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Corn (on the cob)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Corn (kernels)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Eggplant (cubed)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Eggplant (halved)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Fennel",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": true,
+        "30": true,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Garlic (heads)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": true,
+        "40": true,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Mushrooms",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Okra",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Onions (chopped or rings)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Onions (halves)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Onions (whole)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": true,
+        "60": true,
+        "90": false
+      }
+    },
+    {
+      "name": "Parsnips",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Peas (field, Blackeye)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Peas (green - shelled or in the pod)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Peppers (chopped)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Potatoes (cubed or wedges)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Pumpkins (halved or quartered)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": true,
+        "60": true,
+        "90": false
+      }
+    },
+    {
+      "name": "Radishes (chopped or whole)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Rutabagas (cubed)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Summer Squash (cubed, rounds, or strips)",
+      "times": {
+        "15": true,
+        "20": true,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Winter Squash (cubed)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": true,
+        "30": true,
+        "35": true,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Squash (halved)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": true,
+        "60": true,
+        "90": false
+      }
+    },
+    {
+      "name": "Sweet potatoes (cubes or wedges)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Sweet potatoes (rounds)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Tomatillos (halved)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Tomatoes (plum)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": false,
+        "35": false,
+        "40": true,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Turnips (chopped)",
+      "times": {
+        "15": false,
+        "20": false,
+        "25": false,
+        "30": true,
+        "35": true,
+        "40": false,
+        "45": true,
+        "60": false,
+        "90": false
+      }
+    },
+    {
+      "name": "Zucchini (cubes, rounds, or strips)",
+      "times": {
+        "15": false,
+        "20": true,
+        "25": true,
+        "30": false,
+        "35": false,
+        "40": false,
+        "45": false,
+        "60": false,
+        "90": false
+      }
+    }
+  ],
+  "old": [
+    {
+      "name": "Artichoke (whole)",
+      "times": [
+        60,
+        90
+      ]
+    },
+    {
+      "name": "Artichoke (hearrts)",
+      "times": [
+        20,
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Beans (green, snap, or wax)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Beans (butter, Lima, pinto, etc.)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Beets",
+      "times": [
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Broccoli (florets)",
+      "times": [
+        20,
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Brussels sprouts",
+      "times": [
+        20,
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Cabbage (wedges)",
+      "times": [
+        30,
+        35,
+        40
+      ]
+    },
+    {
+      "name": "Carrots",
+      "times": [
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Cauliflower (florets)",
+      "times": [
+        20,
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Corn (on the cob)",
+      "times": [
+        20,
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Corn (kernels)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Eggplant (cubed)",
+      "times": [
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Eggplant (halved)",
+      "times": [
+        30,
+        35,
+        40
+      ]
+    },
+    {
+      "name": "Fennel",
+      "times": [
+        25,
+        30
+      ]
+    },
+    {
+      "name": "Garlic (heads)",
+      "times": [
+        35,
+        40
+      ]
+    },
+    {
+      "name": "Mushrooms",
+      "times": [
+        20,
+        25
+      ]
+    },
+    {
+      "name": "Okra",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Onions (chopped or rings)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Onions (halves)",
+      "times": [
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Onions (whole)",
+      "times": [
+        45,
+        60
+      ]
+    },
+    {
+      "name": "Parsnips",
+      "times": [
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Peas (field, Blackeye)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Peas (green - shelled or in the pod)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Peppers (chopped)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Potatoes (cubed or wedges)",
+      "times": [
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Pumpkins (halved or quartered)",
+      "times": [
+        45,
+        60
+      ]
+    },
+    {
+      "name": "Radishes (chopped or whole)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Rutabagas (cubed)",
+      "times": [
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Summer Squash (cubed, rounds, or strips)",
+      "times": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "Winter Squash (cubed)",
+      "times": [
+        25,
+        30,
+        35
+      ]
+    },
+    {
+      "name": "Squash (halved)",
+      "times": [
+        45,
+        60
+      ]
+    },
+    {
+      "name": "Sweet potatoes (cubes or wedges)",
+      "times": [
+        30,
+        35
+      ]
+    },
+    {
+      "name": "Sweet potatoes (rounds)",
+      "times": [
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Tomatillos (halved)",
+      "times": [
+        20,
+        25
+      ]
+    },
+    {
+      "name": "Tomatoes (plum)",
+      "times": [
+        40,
+        45
+      ]
+    },
+    {
+      "name": "Turnips (chopped)",
+      "times": [
+        30,
+        35,
+        45
+      ]
+    },
+    {
+      "name": "Zucchini (cubes, rounds, or strips)",
+      "times": [
+        20,
+        25
+      ]
+    }
+  ]
+}
