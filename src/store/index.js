@@ -11,8 +11,8 @@ export const store = createStore({
       state.selectedVeggies[name] = time;
     },
     removeVeggie(state, { name }) {
-      if (state.selectedVeggies[name]) {
-        delete state.selectedVeggies[name];
+      if (!!state.selectedVeggies[name]) {
+        state.selectedVeggies[name] = null;
       }
     }
   }

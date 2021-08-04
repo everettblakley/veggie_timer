@@ -1,83 +1,38 @@
 <template>
-  <main class="container pb-12 mx-auto">
+  <header>
     <h1 class="py-4 text-3xl text-center">Veggie Timer</h1>
-    <table class="mx-auto">
-      <tr>
-        <th>Vegetable</th>
-        <th
-          v-for="option in timeOptions"
-          :key="option"
-          class="font-light option"
-          :class="['bg-times-' + [option]]"
-        >
-          {{ option }}
-        </th>
-      </tr>
-      <tr
-        v-for="(veg, index) in veggies"
-        :key="veg.name"
-        :class="{ 'bg-yellow-100': index % 2 === 0 }"
-      >
-        <td class="px-3">
-          <p>{{ veg.name }}</p>
-        </td>
-        <td
-          v-for="option in timeOptions"
-          :key="option"
-          class="option"
-          :class="[optionClassName(option, veg)]"
-          @click="handleClick(option, veg)"
-        ></td>
-      </tr>
-    </table>
+  </header>
+  <main class="container mx-auto overflow-x-hidden overflow-y-auto">
+    <div class="grid grid-cols-1 px-4 py-2 md:grid-cols-2 md:px-2 lg:px-0">
+      <veggie-table class="flex-1" />
+      <timer class="flex-1" />
+    </div>
   </main>
+  <footer class="py-4 text-center text-black bg-yellow-100">
+    <a
+      href="https://everettblakley.ca"
+      target="_blank"
+      title="Everett Blakley's Portfolio"
+      rel="noreferrer"
+      class="italic text-yellow-900 text-small hover:underline"
+    >
+      &copy; Everett Blakley {{ currentYear }}
+    </a>
+  </footer>
 </template>
 
 <script>
-import { useStore } from "vuex";
+import VeggieTable from "./components/VeggieTable.vue";
+import Timer from "./components/Timer.vue";
 
 export default {
   setup() {
-    const store = useStore();
-    const veggies = store.state.data;
-    const timeOptions = [15, 20, 25, 30, 35, 40, 45, 60, 90];
+    const now = new Date();
     return {
-      veggies,
-      timeOptions,
-      selectedVeggies: store.state.selectedVeggies,
-      selectVeggie: (veggie) => store.commit("selectVeggie", veggie),
-      removeVeggie: (veggie) => store.commit("removeVeggie", veggie),
+      currentYear: now.getFullYear(),
     };
   },
-  methods: {
-    optionClassName(option, { name, times }) {
-      let klass = times[option] ? `bg-times-${option} cursor-pointer` : "";
-      if (this.selectedVeggies[name] === option) klass += " selected";
-      return klass;
-    },
-    handleClick(option, { name, times }) {
-      if (times[option]) {
-        const selectedVeg = this.selectedVeggies[name];
-        if (selectedVeg) {
-          if (selectedVeg[option]) {
-            this.removeVeggie({ name });
-            return;
-          }
-        }
-        this.selectVeggie({ name, time: option });
-      }
-    },
-  },
+  components: { VeggieTable, Timer },
 };
 </script>
-
-<style lang="postcss">
-.option {
-  @apply w-12 h-3 text-center text-white;
-}
-td[class*="bg-times-"]:hover,
-.selected {
-  @apply border-4 border-gray-800;
-}
-</style>
 
